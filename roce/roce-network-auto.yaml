@@ -1,0 +1,137 @@
+apiVersion: k8s.cni.cncf.io/v1
+kind: NetworkAttachmentDefinition
+metadata:
+  name: roce-net-1
+spec:
+  config: '{
+    "cniVersion": "0.3.1",
+    "name": "roce-net1",
+    "type": "host-device",
+    "device": "ens12np0",
+    "ipam": {
+      "type": "whereabouts",
+      "range": "172.31.1.0/24",
+      "gateway": "172.31.1.1"
+    }
+  }'
+---
+apiVersion: k8s.cni.cncf.io/v1
+kind: NetworkAttachmentDefinition
+metadata:
+  name: roce-net-2
+spec:
+  config: '{
+    "cniVersion": "0.3.1",
+    "name": "roce-net2",
+    "type": "host-device",
+    "device": "ens11np0",
+    "ipam": {
+      "type": "whereabouts",
+      "range": "172.31.2.0/24",
+      "gateway": "172.31.2.1"
+    }
+  }'
+---
+apiVersion: k8s.cni.cncf.io/v1
+kind: NetworkAttachmentDefinition
+metadata:
+  name: roce-net-3
+spec:
+  config: '{
+    "cniVersion": "0.3.1",
+    "name": "roce-net3",
+    "type": "host-device",
+    "device": "ens13np0",
+    "ipam": {
+      "type": "whereabouts",
+      "range": "172.31.3.0/24",
+      "gateway": "172.31.3.1"
+    }
+  }'
+---
+apiVersion: k8s.cni.cncf.io/v1
+kind: NetworkAttachmentDefinition
+metadata:
+  name: roce-net-4
+spec:
+  config: '{
+    "cniVersion": "0.3.1",
+    "name": "roce-net4",
+    "type": "host-device",
+    "device": "ens14np0",
+    "ipam": {
+      "type": "whereabouts",
+      "range": "172.31.4.0/24",
+      "gateway": "172.31.4.1"
+    }
+  }'
+---
+apiVersion: k8s.cni.cncf.io/v1
+kind: NetworkAttachmentDefinition
+metadata:
+  name: roce-net-5
+spec:
+  config: '{
+    "cniVersion": "0.3.1",
+    "name": "roce-net5",
+    "type": "host-device",
+    "device": "ens16np0",
+    "ipam": {
+      "type": "whereabouts",
+      "range": "172.31.5.0/24",
+      "gateway": "172.31.5.1"
+    }
+  }'
+---
+apiVersion: k8s.cni.cncf.io/v1
+kind: NetworkAttachmentDefinition
+metadata:
+  name: roce-net-6
+spec:
+  config: '{
+    "cniVersion": "0.3.1",
+    "name": "roce-net6",
+    "type": "host-device",
+    "device": "ens15np0",
+    "ipam": {
+      "type": "whereabouts",
+      "range": "172.31.6.0/24",
+      "gateway": "172.31.6.1"
+    }
+  }'
+---
+apiVersion: k8s.cni.cncf.io/v1
+kind: NetworkAttachmentDefinition
+metadata:
+  name: roce-net-7
+spec:
+  config: '{
+    "cniVersion": "0.3.1",
+    "name": "roce-net7",
+    "type": "host-device",
+    "device": "ens17np0",
+    "ipam": {
+      "type": "whereabouts",
+      "range": "172.31.7.0/24",
+      "gateway": "172.31.7.1"
+    }
+  }'
+---
+apiVersion: k8s.cni.cncf.io/v1
+kind: NetworkAttachmentDefinition
+metadata:
+  name: roce-net-8
+spec:
+  config: '{
+    "cniVersion": "0.3.1",
+    "name": "roce-net8",
+    "type": "host-device",
+    "device": "ens18np0",
+    "ipam": {
+      "type": "whereabouts",
+      "range": "172.31.8.0/24",
+      "gateway": "172.31.8.1"
+    }
+  }'
+
+
